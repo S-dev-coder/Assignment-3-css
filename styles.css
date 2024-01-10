@@ -1,0 +1,83 @@
+/* Container styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    /* No gap between grid items */
+    grid-auto-flow: row;
+    /* Items flow in rows */
+    grid-template-areas:
+        "Header Header Header"
+        "Lormipsum-area Lormipsum-area Profile-area"
+        "Lormipsum-area Lormipsum-area Profile-area";
+    width: 800px;
+    height: 500px;
+}
+
+/* Header styles */
+.Header {
+    grid-area: Header;
+    background-color: #FF9999;
+    border: black solid 2px;
+}
+
+/* Lormipsum area styles */
+.Lormipsum-area {
+    grid-area: Lormipsum-area;
+    background-color: rgb(245, 245, 88);
+    /* Yellow background color */
+    border: black solid 2px;
+}
+
+/* Profile area styles */
+.Profile-area {
+    grid-area: Profile-area;
+    background-color: #ECECFB;
+    /* Gray background color */
+    border: black solid 2px;
+}
+
+/* First text styles */
+.first-text {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(58, 57, 57);
+    /* Dark gray text color */
+}
+
+/* Second text styles */
+.second-text {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(58, 57, 57);
+    /* Dark gray text color */
+}
+
+/* Text image styles */
+.text-image {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 510px;
+    height: 310px;
+}
+
+/* Profile image styles */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+/* Profile name styles */
+.profile-name {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Profile description styles */
+.profile-description {
+    text-align: center;
+    font-size: 20px;
+}
